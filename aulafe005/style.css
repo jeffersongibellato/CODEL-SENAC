@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+    background-color: rgba(173, 216, 230, 0.567);
+}
+.conteudo{
+
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(107, 107, 201, 0.75);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px darkblue;
+}
+table{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    text-transform: uppercase;
+    background-color: gray;
+}
+td{
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+tbody tr:nth-child(odd){
+    background-color: blueviolet;
+    color: white;
+}
+tbody tr:hover{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+button{
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    height: 60px;
+    background-color: blue;
+}
+button:hover{
+    width: 120px;
+    height: 80px;
+    background-color: blanchedalmond;
+    transition: 0.5s;
+}
+button:not(:hover){
+    transition: 0.5s;
+}

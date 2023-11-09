@@ -1,0 +1,144 @@
+/* 1: remove a margem e padding de tudo*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2: no body, faz ele encher a tela, esconde o overflow, e coloca a imagem no fundo com no-repeat e com tamanho cover */
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background: url("green_hill.png") no-repeat;
+    background-size: cover;
+}
+
+/* 3: O segredo está no corredor */
+.corredor {
+    position: absolute; /*position absolute quer dizer que é pra ficar onde a gente colocar*/
+    top: 67%; /*70% da altura da tela, entâo, por volta do 3o inferior da tela */
+    left: 5%; /* nâo faz mt diferença aqui*/
+    background: url("mega.png");
+    height: 157px; /* Essa é a altura da imagem mega.png, se não colocar a altura e largura, a imagem não aparece na tela */
+    width: calc(1591px / 10);
+    /* usando a função calc, a gente consegue calcular um tamanho exato: a imagem do megaman tem 10 "frames", e a largura da imagem é 1591px, se
+       dividirmos a imagem pela quantidade de frames e colocar esse valor na largura, a gente consegue fazer com que só uma frame apareça */
+    animation: runMegamanRun 1s steps(10) infinite, locomoveMegaMan 5s linear infinite;
+    /* colocamos duas animações separadas por virgura, a primeira cria a animação de
+       mudança dos frames, 'steps(10)' pra dizer que a animação tem 10 passos: o mesmo tanto de quadros que a animação vai ter */
+}
+
+@keyframes runMegamanRun {
+    0% {
+        background-position: 0;
+        /*a gente move a imagem (que é comprida), mas pq o tamanho é de uma frame, e a quantidade de steps é igual a quantidade de frames, a animação
+                fica smooth*/
+    }
+
+    100% {
+        background-position: -1591px; /* negativo da largura da imagem*/
+    }
+}
+
+@keyframes locomoveMegaMan {
+    0% {
+        transform: translateX(-200px); /* isso aqui move o megaman na tela, começando um pouquinho fora da tela*/
+    }
+
+    100% {
+        transform: translateX(100vw); /* indo até o final da tela, 100vw significando 100% view width*/
+    }
+}
+
+/**
+Os outros são derivações desse processo acima
+ */
+
+@keyframes locomoveBen {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.corredor1 {
+    position: absolute;
+    top: 73%; /*70% da altura da tela, entâo, por volta do 3o inferior da tela */
+    left: 5%;
+    background: url("correr1.png");
+    height: 99px;
+    width: calc(636px / 8);
+    animation: runBenRun 1s steps(8) infinite, locomoveBen 5s linear infinite;
+}
+
+@keyframes runBenRun {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -636px;
+    }
+}
+
+.sonic {
+    position: absolute;
+    top: 60%; /*70% da altura da tela, entâo, por volta do 3o inferior da tela */
+    background: url("sonic.png");
+    height: 210px;
+    width: calc(1960px / 8);
+    animation: runSonicRun 1s steps(8) infinite, locomoveSonic 3s linear infinite;
+}
+
+.eggman {
+    position: absolute;
+    top: 5%;
+    background-image: url("eggman.png");
+    height: 200px;
+    width: calc(397px / 3);
+    animation: runEggRun 1s steps(3) infinite, locomoveEgg 3s linear infinite;
+}
+
+@keyframes runSonicRun {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -1960px;
+    }
+}
+
+@keyframes runEggRun {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -397px;
+    }
+}
+
+@keyframes locomoveSonic {
+    0% {
+        transform: translateX(-750px);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes locomoveEgg {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(calc(100vw + 300px));
+    }
+}
+

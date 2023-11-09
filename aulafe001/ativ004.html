@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIV 04</title>
+    <style>
+        *{
+       text-align: center;
+    }
+    main{
+       background-color: whitesmoke;
+    }
+    .container{
+       background-color: white;
+       box-shadow: 1px;
+       display: inline-block;
+       height: 500px;
+       width: 500px;
+       margin: 200px 0px 200px 0px;
+    }
+input{
+    margin:10px;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form>
+                <h1>Forms</h1>
+                Nome:<input type="text" name="txtNome" id="Nometxt">
+                Idade: <input type="number" name="nmbIdade" id="Idadenmb">
+                <h2>Genero</h2> <br>
+                <label for="Masculinord">Masculino:</label><input type="radio" name="rdGenero" id="Masculinord">
+                <label for="Femininord">Feminino:</label><input type="radio" name="rdGenero" id="Femininord">
+                <label for="Outrosrd">Outros:</label><input type="radio" name="rdGenero" id="Outrosrd">
+                <hr>
+                <input type="button" value="Enviar">
+                <hr>
+                <label for="Senhapsw">Senha:</label><input type="password" name="pswSenha" id="Senhapsw">
+                <label for="Emaileml">E-mail</label><input type="email" name="emlEmail" id="Emaileml">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

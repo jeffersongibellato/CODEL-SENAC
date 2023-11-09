@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA FE 005</title>
+</head>
+<body>
+    <form action="" method="">
+        <label for="">Nome:</label>
+        <input type="text"> <br>
+        <label for="">Idade:</label>
+        <input type="number"> <br>
+        <label for="">Nascimento:</label>
+        <input type="date"> <br>
+        <label for="">Data e hora</label>
+        <input type="datetime"> <br>
+        <label for="">E-mail</label>
+        <input type="email"> <br>
+        <label for="">Altitude:</label>
+        <input type="range" min="100" max="1000" step="50"> <br>
+        <label for="">Busca:</label>
+        <input type="search"> <br>
+        <fieldset>
+            <legend>Gênero</legend>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="gen" id="masc">
+        <label for="fen">Feminino</label>
+        <input type="radio" name="gen" id="fen">
+        <label for="outr">Outros</label>
+        <input type="radio" name="gen" id="outr">
+    </fieldset>
+    <label for="">ESTADOS</label>
+    <select label="estados" id="est">
+    <optgroup label="Região Sul" >
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option>
+    </optgroup>
+    <optgroup label="Região Sudeste">
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="ES">Espirito Santo</option>
+    </optgroup>
+</select>
+<input type="text" list="cidades" name="city">
+    <datalist id="cidades">
+        <option value="Rio de Janeiro"></option>
+        <option value="Niteroi"></option>
+        <option value="Nova Iguaçu"></option>
+    </datalist>
+    </form>
+</body>
+</html>

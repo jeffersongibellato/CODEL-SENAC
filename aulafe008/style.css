@@ -1,0 +1,98 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.geral{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Imagens/ceu.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.estrada{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(Imagens/estrada.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: movimento 8s linear infinite;
+
+}
+@keyframes movimento{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.cidade{
+    height: 250px;
+    width: 500%;
+    background-image: url(Imagens/cidade.png);
+    position:absolute;
+    bottom: 118px;
+    right: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: cidade 20s linear infinite;
+}
+@keyframes cidade{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.carro{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.carro img{
+    width: 100%;
+    animation: carro 1s linear infinite;
+}
+@keyframes carro{
+    100%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    0%{
+        transform: translateY(-5px);
+    }
+}
+.roda{
+    left: 50%;
+    bottom: 213px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.roda img{
+    width: 90px;
+    height: 90px;
+    animation: rodar 2s linear infinite;
+}
+@keyframes rodar{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.roda-traseira{
+    left: -165px;
+    position: absolute;
+}
+.roda-dianteira{
+    left: 80px;
+    position: absolute;
+}

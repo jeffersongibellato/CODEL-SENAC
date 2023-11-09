@@ -1,0 +1,35 @@
+*{
+    text-align: center;
+    border-radius: 25px;
+}
+.conteudo{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 228, 196, 0.641);
+    margin-top: 200px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px;
+}
+#produto{
+    margin: 20px 0px 30px 0px;
+}
+.btn{
+    width: 150px;
+    border: none;
+    box-shadow: 10px 10px 10px black;
+    color: white;
+    font-size: 17px;
+    text-shadow: 3px 3px black;
+    background-color: brown;
+}
+#tabela{
+    margin: auto;
+    background-color: rgb(140, 170, 171);
+    border-collapse: collapse;
+}
+td{
+        background-color: rgb(140, 170, 171);
+    border: 1px solid black;
+   
+}

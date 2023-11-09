@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    height: 2rem;
+    background-color: #fff;
+    align-items: center;
+    padding-left: 1rem;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    position:fixed;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+}
+section{
+    min-height: 100vh;
+    padding: 2.5rem;
+    background-size: cover;
+    
+}
+#ini{
+    background-image: url(img1.jpg);
+
+}
+#ser{
+    background-image: url(img2.jpg);
+}
+#con{
+    background-image: url(img3.jpg);
+}
+#cur{
+    background-image: url(img4.jpg);
+}
+#sob{
+    background-image: url(img5.jpg);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ 1 - FE7</title>
+</head>
+<style>
+    .btn{
+        padding: 10px 20px;
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 3px 5px 3px black;
+        border: 5px solid darkolivegreen;
+    }
+    .btn:hover{
+        transition: 0.5s;
+        padding: 15px 25px;
+        background-color: darkolivegreen;
+        color: whitesmoke;
+    }
+    .btn:not(:hover){
+        transition: 0.5s;
+    }
+    .btn1{
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 2px 2px 2px darkblue;
+        background: linear-gradient(43deg, red, blue, green, yellow, gray);
+    }
+    .btn2{
+        margin-top: 10px;
+        padding: 30px 40px;
+        border-radius: 25px;
+        color: white;
+        background: linear-gradient(90deg, red, blue, purple, green, yellow);
+    }
+    .btn2:hover{
+        
+        transition: 1.0s;
+        margin-top: 10px;
+        padding: 40px 50px;
+        border-radius: 100%;
+        background: linear-gradient(90deg, yellow, green, purple, blue, red);
+    }
+    .btn2:not(:hover){
+        transition: 1s;;
+    }
+</style>
+<body>
+    <button class="btn">Botão 1</button>  <br>
+    <button class="btn1">Botão 2</button> <br>
+    <button class="btn2">Botão 3</button>
+</body>
+</html>

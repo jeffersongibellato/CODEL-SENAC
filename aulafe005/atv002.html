@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV002 FE</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        input{
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="">
+        <h1>CADASTRO DE FORNECEDOR</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <label for="">Nome:</label>
+        <input type="text"> <br>
+        <label for="">Idade:</label>
+        <input type="number"> <br>
+        <label for="">Nascimento:</label>
+        <input type="date"> <br>
+        <label for="">E-mail</label>
+        <input type="email"> <br>
+        <label for="">Telefone</label>
+        <input type="text"><br>
+        <fieldset>
+            <legend>Gênero</legend>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="gen" id="masc">
+        <label for="fen">Feminino</label>
+        <input type="radio" name="gen" id="fen">
+        <label for="outr">Outros</label>
+        <input type="radio" name="gen" id="outr">
+    </fieldset>
+</fieldset>
+<fieldset>
+    <legend>Endereço</legend>
+    <label for="">Rua:</label>
+    <input type="text"> <br>
+    <label for="">Bairro</label>
+    <input type="text"> <br>
+    <label for="">Número</label>
+    <input type="text"> <br>
+    <label for="">ESTADOS</label>
+    <select label="estados" id="est">
+        <optgroup label="Região Sul" >
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </optgroup>
+        <optgroup label="Região Sudeste">
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="ES">Espirito Santo</option>
+        </optgroup>
+    </select> <br>
+    <label for="">Cidade:</label>
+    <input type="text">
+</fieldset>
+    </form>
+</body>
+</html>

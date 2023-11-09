@@ -1,0 +1,51 @@
+.btn1{
+    border-color: dodgerblue;
+    color: #fff;
+    box-shadow: 0 0 40px dodgerblue inset, 0 0 0 0 dodgerblue;
+    transition: all 0.5s ease-in-out;
+}
+.btn1:hover{
+    box-shadow: 0 0 10px 0 dodgerblue inset, 0 0 10px 5px dodgerblue;
+    color: darkblue
+}
+.btn2{
+    border-color: #f1c40f;
+    color:darkblue;
+    background-image: linear-gradient(45deg, #f1c40f, 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: 300ms ease-in-out;
+}
+.btn2:hover{
+    background-position: 0;
+}
+.btn3{
+    border-color: rebeccapurple;
+    border-radius: 0;
+    color: rebeccapurple;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+}
+.btn3:hover{
+    color: #fff;
+
+}
+.btn3:after{
+    content: '';
+    position: absolute;
+    display: block;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background-color: rebeccapurple;;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+
+}
+.btn3:hover:after{
+    width: 100%;
+}

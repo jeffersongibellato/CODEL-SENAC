@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ2 - fe7</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    button{
+        position: relative;
+        top: 50%;
+        left: 50%;
+    }
+</style>
+<body>
+     <button onmouseover="mover()">Clique aqui</button>
+
+   
+
+    <script>
+        let btn = document.querySelector('button')
+        let x, y;
+        let tela = document.querySelector('body');
+
+        function mover(){
+            btn.style.display = 'none';
+            let cor =  Math.floor(Math.random()*1000);
+            console.log(cor);
+            tela.style.backgroundColor =  '#'+cor;
+            novaPosicao()
+        }
+        function novaPosicao(){
+            x = Math.floor(Math.random() * (1200-50)+50);
+            y = Math.floor(Math.random() * (600-50) + 50);
+            btn.style.left = x + "px";
+            btn.style.top = y + "px";
+            btn.style.display = "block";
+            
+        }
+    </script>
+</body>
+</html>
