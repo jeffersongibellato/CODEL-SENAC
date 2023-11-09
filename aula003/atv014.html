@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV014</title>
+</head>
+<body>
+    <script>
+        let number = 5
+        let tentat
+        for (i=1;i<=4;i++){
+            tentat = parseInt(prompt("Essa é a tentativa " + (i)+"\nINSIRA UM NUMERO"))
+            if(tentat != number && i<4 && tentat < number){
+                alert("Você errou, é um número maior")
+            }else if(tentat != number && i<4 && tentat > number){
+                alert("Você errou, é um número menor")
+            }else if (tentat != number && i==4){
+                document.write("VOCÊ PERDEU O NÚMERO É " + number)
+            }else{
+                document.write("VOCÊ ACERTOU")
+                i=5
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV017</title>
+    <style>
+            *{
+            text-align: center;
+        }
+        main{
+            background-color: whitesmoke;
+        }
+        .container{
+            background-color: white;
+            box-shadow: 1px;
+            display: inline-block;
+            height: 500px;
+            width: 500px;
+            margin: 200px 0px 200px 0px;
+        }
+        .container>input{
+            margin-top: 55px;
+        }
+        button{
+            margin-top: 30px;
+        }
+        #Resultado{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Operações Matematicas</h1>
+            <input type="text" id="texto1"><br>
+            <input type="text" id="texto2"><br>
+            <button onClick="clickMe()">Somar</button>
+            <p id="Resultado"></p>
+    </main>
+    <script>
+        function clickMe(){
+        let vlr1 = Number(document.querySelector("#texto1").value)
+        let vlr2 = Number(document.querySelector("#texto2").value)
+        let resultado = document.querySelector("#Resultado")
+        resultado.innerHTML = (`${vlr1 + vlr2}`);
+    }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV016</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        main{
+            background-color: whitesmoke;
+        }
+        .container{
+            background-color: white;
+            box-shadow: 1px;
+            display: inline-block;
+            height: 500px;
+            width: 500px;
+            margin: 200px 0px 200px 0px;
+        }
+        .container>input{
+            margin-top: 220px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Tabuada</h1>
+        <input type="text" id="botao">
+        <button onclick="print()">Clique aqui</button>
+    </div>
+    </main>
+    <script>
+        function print(){
+            //let n = document.getElementById("botao")
+            let n = document.querySelector("#botao")
+            n = parseInt(n.value)
+            for (i=1;i<=10;i++){
+            document.write(n + " X " + i + " = " + (n*i)  + "<br>")
+        }
+        }
+    </script>
+</body>
+</html>
