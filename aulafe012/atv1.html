@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA FE 012</title>
+</head>
+<style>
+    label{
+        color: red;
+    }
+    input{
+        border-radius: 25px;
+        margin: 10px;
+        padding: 5px 10px;
+    }
+    .texto1{
+
+        background-color: gray;
+        color: yellow;
+
+    }
+    .texto2{
+        background-color: black;
+        color: red;
+    }
+</style>
+<body>
+    <label for="txtNome">Nome</label>
+    <input type="text" id="txtNome" name="" class="texto1"><br>
+    <label for="txtEndereco">Endereço</label>
+    <input type="text" id="txtEndereco" name="" class="texto2"><br>
+    <label for="radGenero">Gênero:</label><br>
+    <label for="radMasc">Masculino</label>
+    <input type="radio" name="radGenero" id="radMasc"><br>
+    <label for="radFen">Feminino</label>
+    <input type="radio" name="radGenero" id="radFen"><br>
+    <label for="radOut">Outros</label>
+    <input type="radio" name="radGenero" id="radOut"><br>
+    <label for="">Interesses</label><br>
+    <label for="cbxEsp">Esportes</label>
+    <input type="checkbox" name="interesses" id="cbxEsp">
+    <label for="cbxCar">Carro</label>
+    <input type="checkbox" name="interesses" id="cbxCar">
+    <label for="cbxChu">Churrasco</label>
+    <input type="checkbox" name="interesses" id="cbxChu">
+    <br>
+    <label for="slcEst">Estado Civil</label>
+    <select name="est_Civil" id="slcEst">
+        <option value="C">Casado</option>
+        <option value="S">Solteiro</option>
+        <option value="D">Divorciado</option>
+        <option value="V">Viuvo</option>
+    </select>
+    <br>
+    <label for="emlPrincipal">E-mail:</label>
+    <input type="email" name="" id="emlPrincipal">
+    <br>
+    <label for="pswSenha">Senha:</label>
+    <input type="password" name="" id="pswSenha" placeholder="Somente Números">
+    <br>
+    <label for="nmbIdade">Idade</label>
+    <input type="number" name="" id="nmbIdade">
+    <br>
+    <label for="txaDescricao">Descrição</label>
+    <textarea name="" id="txaDescricao" cols="30" rows="10"></textarea>
+    <br>
+    <label for="datNasc">Nascimento</label>
+    <input type="date" name="" id="datNasc">
+    <br>
+    <label for="corCores">Cores</label>
+    <input type="color" name="" id="corCores">
+    <br>
+    <label for="rgeNotas">Notas</label>
+    <input type="range" name="" id="rgeNotas" min="1" max="5">
+    <br>
+    <label for="slcRegiao">Regiões</label>
+    <select name="" id="">
+        <optgroup label="Sul">
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+        </optgroup>
+        <optgroup label="Sudeste">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+        </optgroup>
+    </select>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.formLogin{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+.formLogin__header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 250px; 
+}
+.formLogin__header img{
+    width: 200px;
+}
+.formLogin__header h1{
+    color: #333;
+    font-size: 1.5rem;
+}
+.formLogin__input{
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #333;
+    font-size: 13.5px;
+    margin-bottom: 15px;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+.formLogin__button{
+    background: #00b5cc;
+    border: 3px solid #b2df28;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    max-width: 300px;
+    padding: 15px;
+}
+.formLogin__button:disabled{
+    background: #eee;
+    border: 2px solid #969696;
+    cursor: pointer;
+    color: #aaa;
+}

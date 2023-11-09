@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokempo</title>
+    <link rel="stylesheet" href="styleGame.css">
+</head>
+<body>
+    <header>
+        <h1>JOKEMPO</h1>
+        <section>
+            <p id="count">Partida:</p>
+        </section>
+    </header>
+    <main>
+        <section id="Player1">
+            <label for="pedraInput"><img src="imagens/pedra.png" alt="pedra" class="Escolha"></label>
+            <input type="radio" name="player1" id="pedraInput">
+            <label for="papelInput"><img src="imagens/papel.png" alt="papel" class="Escolha"></label>
+            <input type="radio" name="player1" id="papelInput">
+            <label for="tesouraInput"><img src="imagens/tesoura.png" alt="tesoura" class="Escolha"></label>
+            <input type="radio" name="player1" id="tesouraInput">
+        </section>
+        <section id="PlayerPc">
+            <div class="pcContainer" id ="pcJogoImg">
+                <img src="imagens/pc.png" alt="PcDefault">
+            </div>
+        </section>
+        <section>
+            <input type="button" value="Jogar" id="Jogar" onclick="jogadorJoga()">
+        </section>
+    </main>
+    <footer>
+        <h2>Resultado</h2>
+        <nav id="PontPlayer1">Player:</nav>
+        <nav id="ResultadoPartida">Resultado</nav>
+        <nav id="PontPcPlayer">Computador:</nav>
+    </footer>
+    <script src="gameController.js">
+
+    </script>
+</body>
+</html>

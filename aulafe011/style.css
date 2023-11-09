@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: black;
+    border: 3px solid darkblue;
+    padding: 2rem 4rem;
+}
+.gradiente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg,blue, green);
+    background-size: 150% 150%;
+    animation: moverCores 15s linear infinite;
+}
+@keyframes moverCores {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

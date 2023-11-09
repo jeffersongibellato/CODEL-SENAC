@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(27, 27, 63);
+}
+.container{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    align-items: center;
+}
+.boxLogin{
+    width: 400px;
+    position: absolute;
+}
+h2{
+    font-size: 2rem;
+    color: #0ef;
+    text-align: center;
+}
+form{
+    width: 100%;
+    padding: 0px 50px;
+}
+.cxEntrada{
+    position: relative;
+    margin: 25px 0px;
+}
+input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #2c4702;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    color: white;
+}
+.cxEntrada label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+    pointer-events: none;
+    transition: .5 ease-out;
+}
+.esqueciSenha{
+    margin: -15px 0 10px;
+    text-align: center;
+}
+a{
+font-size: .8rem;
+color: white;
+text-decoration: none;
+text-align: center;
+}
+.esqueciSenha a:hover{
+    transition: .5s ease-in-out;
+    text-decoration: underline;
+    color: lightgray;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #0ef;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    color: #1f2931;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.cadastro{
+    margin: 20px 0px 5px;
+    text-align: center;
+}
+.cadastro a{
+    color: rgb(97, 97, 97);
+}
+.cadastro a:hover{
+    transition: .5s ease-out;
+    font-size: 1rem;
+    color: white;
+}
+.cxEntrada input:focus ~ label, input:valid{
+    top: 1px;
+    font-size: .7rem;
+    background: #1f2931;
+    color:aquamarine;
+    transition: .5s;
+    font-weight: bolder;
+}
+.cxEntrada input:focus{
+    border-color: aquamarine;
+    transition: 0.8s;
+}
+span{
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background: darkslateblue;
+    transform: scale(2.2) rotate(calc(var(--i)*(360deg / 50)));
+    transform-origin: 128px;
+    animation: rotacao 3s linear infinite;
+    animation-delay: calc(var(--i)*(3s/50));
+}
+@keyframes rotacao{
+    0%{background: aquamarine;}
+    25%{background: darkslateblue;}
+}

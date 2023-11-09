@@ -1,0 +1,93 @@
+@media screen and (min-width: 800px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #EEE;
+    }
+    header{
+        margin: 0px;
+        padding: 0px;
+        height: 150px;
+        width: 100%;
+        display: flex;
+        background-color: wheat;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .divao{
+        flex-direction: row;
+        display: flex;
+    }
+    header img{
+        margin-right: 300px;
+        display: flex;
+        width: 120px;
+        height: 120px;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover{
+        color: white;
+        background-color: #000;
+        transition: 1s;
+    }
+    header i{
+        margin-left: 300px;
+    }
+    .close{
+        margin-top: 7px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 799px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        margin: 0px;
+        padding: 0px;
+        height: 150px;
+        width: 100%;
+        display: flex;
+        background-color: wheat;
+        align-items:end;
+        justify-content:flex-end;
+    }
+    .grande1, .grande2, .divao, .close{
+        display: none;
+    }
+    .menuAp{
+        padding: 10px;
+        margin-right: 50px;
+        border: 2px solid black;
+
+    }
+    .menuTog{
+        transition: 0.5s;
+        background-color: blue;
+        transform: rotate(90deg);
+    }
+    .divao{
+        display: flex;
+        flex-direction: column;
+    }
+    img.menuEsp{
+        margin-right: 300px;
+        display: flex;
+        width: 120px;
+        height: 120px; 
+    }
+    .close{
+        display: flex;
+    }
+    p.menuEsp{
+        display:flex;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+
