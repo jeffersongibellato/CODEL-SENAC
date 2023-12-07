@@ -11,7 +11,7 @@ public class App {
         String mysqlPort = "3306";
         String mysqlDatabase = "teste2";
         String mysqlUser = "root";
-        String mysqlPass = "Terramarte_01=01";
+        String mysqlPass = "";
         String getVars = "useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
         String mysqlUrl = "jdbc:mysql://" + mysqlHost + ":" + mysqlPort + "/" + mysqlDatabase + "?" + getVars;
         String status = "Nada aconteceu";
