@@ -10,7 +10,7 @@ public class Connector {
         String mysqlHost = "localhost";
         String mysqlPort = "3306";
         String mysqlUser = "root";
-        String mysqlPass = "Terramarte_01=01";
+        String mysqlPass = "";
         String mysqlDatabase = "teste2";
         String getVars = "useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
         String mysqlUrl = "jdbc:mysql://" + mysqlHost + ":" + mysqlPort + "/" + mysqlDatabase + "?" + getVars;
